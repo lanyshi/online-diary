@@ -10,7 +10,7 @@ For this project, I'm going to create a diary web application using Django frame
 
 ### Create Project Space
 
-Create a project workspace, called **project-workspace/** which holds my project content.
+Create a project workspace, called *project-workspace/* which holds my project content.
 
 Load python3 and activate virtual environment.
 
