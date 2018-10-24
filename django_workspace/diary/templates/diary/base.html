@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/diary.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+        Diary
+      {% endblock %}
+    </title>
+  </head>
+  <body>
+    <div class="page_header">
+        {% if user.is_authenticated %}
+          <h1><a href="{% url 'post_list' %}">{{ request.user.first_name }}'s Diary</a></h1>
+          <a href="{% url 'logout' %}" class="top_menu">Logout</a>
+        {% else %}
+          <h1><a href="/">Welcome!</a></h1>
+          <a href="{% url 'signup' %}" class="top_menu">Sign Up</a>
+          <a href="{% url 'login' %}" class="top_menu">Login</a>
+        {% endif %}
+    </div>
+    {% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="new"><span class="glyphicon glyphicon-plus"></span>New</a>
+    {% endif %}
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+  </body>
+</html>

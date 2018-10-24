@@ -1,0 +1,21 @@
+{% extends 'diary/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <h1>{{ post.title }}</h1>
+        {% if post.date %}
+            <div class="date">
+                <span class="glyphicon glyphicon-calendar"></span> {{ post.date }}
+            </div>
+        {% endif %}
+        <div class="weather"><span class="glyphicon glyphicon-cloud"></span> {{ post.weather }}</div>
+        {% if post.mood %}
+            <div class="mood">
+                <span class="glyphicon glyphicon-heart"></span> {{ post.mood }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-edit"></span></a>
+        <a class="btn btn-danger" href="{% url 'post_delete' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}

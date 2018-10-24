@@ -1,0 +1,114 @@
+h1 {
+    color: #000000;
+}
+.page_header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+.page_header h1, .page_header h1 a, .page_header h1 a:visited, .page_header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+    display: inline-block;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+.container {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.signup-form{
+    margin-top: 40px;
+}
+.signup-form input {
+    width: 30%;
+}
+.signup-form p label{
+    width: 150px;
+}
+.signup-form p span{
+    padding-left: 10px;
+    color: #828282;
+}
+.signup-form button{
+    margin-right: 57%;
+    margin-top: 40px;
+}
+.date, .weather, .mood {
+    font-family: 'Montserrat', sans-serif;
+    color: #828282;
+}
+.post div, .post h1, .post a, .post button{
+    display: inline-block;
+    margin-right: 15px;
+}
+.post a{
+    width: 50px;
+}
+.post p{
+    margin: 30px 10px 10px;
+}
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+.post-form ul{
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    display: flex;
+}
+.post-form ul li label input{
+    width: 15px;
+}
+.top_menu, .top_menu:hover, .top_menu:visited {
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+    float: right;
+    font-size: 15pt;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.post {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.post_list{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.post_list div{
+    margin-bottom:15px;
+    margin-left: 10px;
+}
+.post_list h1 a, .post_list h1 a:hover, .post_list h1 a:visited {
+    color: #FCA205;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+.post-form{
+    margin-top: 30px;
+}
+.post-form p label{
+    font-size: 18px;
+}
+.save {
+    float: right;
+    margin-bottom: 20px;
+}
+.new, .new:hover, .new:visited, .new:active{
+    font-family: 'Lobster', cursive;
+    color: #FCA205;
+    float: right;
+    font-size: 26pt;
+    margin-right: 40px;
+    padding: 20px;
+}
+.new span{
+    color: #FCA205;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
