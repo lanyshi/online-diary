@@ -93,7 +93,7 @@ First create a view.
 	
 Create a template for the post details.
 
-	* Create a file in *diary/templates/diary/* called *post_detail.html*.
+* Create a file in *diary/templates/diary/* called *post_detail.html*.
 
 ### Work with Forms
 
